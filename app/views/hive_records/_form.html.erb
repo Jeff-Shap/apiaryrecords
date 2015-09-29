@@ -87,15 +87,15 @@
   <%= f.label 'Medications' %>
   <%= f.check_box :medication %>
   <%= f.label 'Added', :class => 'med_optional_record_field' %>
-  <%= f.select :meds_added, ['Apistan', 'Apiguard', 'Mite Away II', 'Tylan', 'Fumagilin-B', 'Terramycin', 'Other'], :include_blank => true %>
+  <%= f.select :meds_added, ['Apistan', 'Apiguard', 'Mite Away II', 'Tylan', 'Fumagilin-B', 'Terramycin', 'Other'], {}, { :class => 'med_optional_record_field'} %>
   <%= f.label 'Removed', :class => 'med_optional_record_field' %>
-  <%= f.select :meds_removed, ['Apistan', 'Apiguard', 'Mite Away II', 'Tylan', 'Fumagilin-B', 'Terramycin', 'Other'], :include_blank => true %>
+  <%= f.select :meds_removed, ['Apistan', 'Apiguard', 'Mite Away II', 'Tylan', 'Fumagilin-B', 'Terramycin', 'Other'], {}, { :class => 'med_optional_record_field'} %>
 
   <br />
 
   <%= f.label 'Integrated Pest Management' %>
   <%= f.check_box :ipm_used %>
-  <%= f.select :ipm, ['Screened bottom board', 'Powedered sugar mite drop', 'Drone cell foundation', 'Other'], :include_blank => true %>
+  <%= f.select :ipm, ['Screened bottom board', 'Powedered sugar mite drop', 'Drone cell foundation', 'Other'], {}, { :class => 'ipm_optional_record_field'} %>
 
   <br />
 

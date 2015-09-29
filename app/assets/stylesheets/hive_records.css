@@ -3,6 +3,6 @@
   They will automatically be included in application.css.
 */
 
-.queen_optional_record_field, .disease_optional_record_field, .med_optional_record_field, .ipm_optional_record_field, .replace_equip_optional_record_field, #hive_record_meds_added, #hive_record_meds_removed, #hive_record_ipm {
+.queen_optional_record_field, .disease_optional_record_field, .med_optional_record_field, .ipm_optional_record_field, .replace_equip_optional_record_field {
   visibility: hidden;
 }
