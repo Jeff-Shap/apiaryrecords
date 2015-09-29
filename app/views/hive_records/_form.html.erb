@@ -90,7 +90,10 @@
 
   <%= f.label 'Medications' %>
   <%= f.check_box :medication %>
-  <%= f.select :type_of_medication, ['Apistan', 'Apiguard', 'Mite Away II', 'Tylan', 'Fumagilin-B', 'Terramycin', 'Other'], :include_blank => true %>
+  <%= f.label 'Added' %>
+  <%= f.select :meds_added, ['Apistan', 'Apiguard', 'Mite Away II', 'Tylan', 'Fumagilin-B', 'Terramycin', 'Other'], :include_blank => true %>
+  <%= f.label 'Removed' %>
+  <%= f.select :meds_removed, ['Apistan', 'Apiguard', 'Mite Away II', 'Tylan', 'Fumagilin-B', 'Terramycin', 'Other'], :include_blank => true %>
 
   <div class="actions">
     <%= f.submit %>
