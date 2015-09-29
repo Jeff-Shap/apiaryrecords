@@ -101,6 +101,24 @@
   <%= f.check_box :ipm_used %>
   <%= f.select :ipm, ['Screened bottom board', 'Powedered sugar mite drop', 'Drone cell foundation', 'Other'], :include_blank => true %>
 
+  <br />
+
+  <%= f.label 'Hive Condition' %>
+  <%= f.select :hive_condition, ['Normal', 'Brace comb', 'Burr comb', 'Excessive Propolis'] %>
+
+  <%= f.label 'Hive Odor' %>
+  <%= f.select :hive_odor, ['Normal', 'Foul'] %>
+
+  <br />
+  <%= f.label 'Replace Equipment:' %>
+  <%= f.check_box :replace_equipment %>
+  <%= f.label 'Equipment to replace:' %>
+  <%= f.text_field :equip_to_replace %>
+
+  <br />
+
+  <%= f.label 'Replace Foundation:' %>
+  <%= f.check_box :replace_foundation %>
 
   <div class="actions">
     <%= f.submit %>
