@@ -95,6 +95,13 @@
   <%= f.label 'Removed' %>
   <%= f.select :meds_removed, ['Apistan', 'Apiguard', 'Mite Away II', 'Tylan', 'Fumagilin-B', 'Terramycin', 'Other'], :include_blank => true %>
 
+  <br />
+
+  <%= f.label 'Integrated Pest Management' %>
+  <%= f.check_box :ipm_used %>
+  <%= f.select :ipm, ['Screened bottom board', 'Powedered sugar mite drop', 'Drone cell foundation', 'Other'], :include_blank => true %>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>

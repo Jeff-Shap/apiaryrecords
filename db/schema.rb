@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150929193651) do
+ActiveRecord::Schema.define(version: 20150929194701) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 20150929193651) do
     t.boolean  "medication"
     t.string   "meds_added"
     t.string   "meds_removed"
+    t.boolean  "ipm_used"
+    t.string   "ipm"
   end
 
 end
