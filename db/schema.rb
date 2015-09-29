@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150929185214) do
+ActiveRecord::Schema.define(version: 20150929185340) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20150929185214) do
     t.string   "population"
     t.boolean  "deep_body"
     t.boolean  "split_hive"
+    t.boolean  "swarming_imminent"
   end
 
   create_table "order_profiles", force: :cascade do |t|
