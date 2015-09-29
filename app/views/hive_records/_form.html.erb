@@ -79,6 +79,14 @@
   <%= f.label 'Converted worker cell:' %>
   <%= f.number_field :queen_cells_converted %>
 
+  <br />
+
+  <%= f.label 'Disease or Pests' %>
+  <%= f.check_box :disease_or_pest %>
+  <%= f.label 'Type:' %>
+  <%= f.select :type_of_disease_pest, ['Chalkbrood', 'Nosema', 'Varroa Mites', 'Tracheal Mites', 'EFB', 'AFB', 'Small Hive Beetle', 'Other'], :include_blank => true%>
+  <br />
+
 
   <div class="actions">
     <%= f.submit %>
