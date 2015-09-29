@@ -69,6 +69,6 @@ class HiveRecordsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hive_record_params
-      params.require(:hive_record).permit(:hive_id_temp)
+      params.require(:hive_record).permit(:hive_id_temp, :hive_temperament)
     end
 end

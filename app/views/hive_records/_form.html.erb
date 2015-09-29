@@ -11,9 +11,12 @@
     </div>
   <% end %>
 
-  <%= label_tag 'Hive #:' %>
+  <%= f.label 'Hive #:' %>
   <%= f.number_field 'hive_id_temp' %>
-  
+
+  <%= f.label 'Hive Temperament:' %>
+  <%= f.select :hive_temperament, ['Calm', 'Nervous', 'Agressive', 'Time to requeen']%>
+
   <div class="actions">
     <%= f.submit %>
   </div>
