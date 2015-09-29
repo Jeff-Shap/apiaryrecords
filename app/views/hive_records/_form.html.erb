@@ -39,6 +39,11 @@
   <%= f.label 'Population:' %>
   <%= f.select :population, ['Heavy', 'Moderate', 'Low']%>
 
+  <br />
+
+  <%= f.label 'Added deep body' %>
+  <%= f.check_box :deep_body %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
