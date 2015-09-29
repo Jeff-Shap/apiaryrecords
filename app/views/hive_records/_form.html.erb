@@ -14,13 +14,25 @@
   <%= f.label 'Hive #:' %>
   <%= f.number_field 'hive_id_temp' %>
 
+  <br />
+
   <%= f.label 'Hive Temperament:' %>
   <%= f.select :hive_temperament, ['Calm', 'Nervous', 'Agressive', 'Time to requeen']%>
 
+  <br />
+
   <%= f.label 'Laying Pattern:' %>
   <%= f.select :laying_pattern, ['Beautiful (Solid & Uniform)', 'Mediocre (Intermittent or Random)', 'Poor (Spotty)']%>
-
   
+  <br />
+
+  <%= f.label 'Eggs Present (if No, leave blank)' %>
+  <%= f.check_box :eggs_present %>
+
+  <br />
+
+  <%= f.label 'Egg comments:' %>
+  <%=f.text_field :eggs_present_comment %>
 
   <div class="actions">
     <%= f.submit %>
