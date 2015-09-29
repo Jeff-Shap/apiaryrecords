@@ -34,6 +34,11 @@
   <%= f.label 'Egg comments:' %>
   <%=f.text_field :eggs_present_comment %>
 
+  <br />
+
+  <%= f.label 'Population:' %>
+  <%= f.select :population, ['Heavy', 'Moderate', 'Low']%>
+
   <div class="actions">
     <%= f.submit %>
   </div>
