@@ -1,0 +1,2 @@
+module HiveRecordsHelper
+end
