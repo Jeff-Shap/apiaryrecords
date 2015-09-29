@@ -69,6 +69,6 @@ class HiveRecordsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hive_record_params
-      params.require(:hive_record).permit(:hive_id_temp, :hive_temperament, :laying_pattern, :eggs_present, :eggs_present_comment, :population, :deep_body, :split_hive, :swarming_imminent, :excessive_drone_cells)
+      params.require(:hive_record).permit(:hive_id_temp, :hive_temperament, :laying_pattern, :eggs_present, :eggs_present_comment, :population, :deep_body, :split_hive, :swarming_imminent, :excessive_drone_cells, :drone_pop_est)
     end
 end
