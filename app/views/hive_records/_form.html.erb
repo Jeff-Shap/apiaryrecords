@@ -85,8 +85,12 @@
   <%= f.check_box :disease_or_pest %>
   <%= f.label 'Type:' %>
   <%= f.select :type_of_disease_pest, ['Chalkbrood', 'Nosema', 'Varroa Mites', 'Tracheal Mites', 'EFB', 'AFB', 'Small Hive Beetle', 'Other'], :include_blank => true%>
+  
   <br />
 
+  <%= f.label 'Medications' %>
+  <%= f.check_box :medication %>
+  <%= f.select :type_of_medication, ['Apistan', 'Apiguard', 'Mite Away II', 'Tylan', 'Fumagilin-B', 'Terramycin', 'Other'], :include_blank => true %>
 
   <div class="actions">
     <%= f.submit %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150929192255) do
+ActiveRecord::Schema.define(version: 20150929193208) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,8 @@ ActiveRecord::Schema.define(version: 20150929192255) do
     t.integer  "queen_cells_converted"
     t.boolean  "disease_or_pest"
     t.string   "type_of_disease_pest"
+    t.boolean  "medication"
+    t.string   "type_of_medication"
   end
 
   create_table "order_profiles", force: :cascade do |t|
