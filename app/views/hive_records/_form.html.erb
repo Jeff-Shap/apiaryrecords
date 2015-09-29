@@ -80,7 +80,7 @@
   <%= f.label 'Disease or Pests' %>
   <%= f.check_box :disease_or_pest %>
   <%= f.label 'Type:', :class => 'disease_optional_record_field' %>
-  <%= f.select :type_of_disease_pest, ['Chalkbrood', 'Nosema', 'Varroa Mites', 'Tracheal Mites', 'EFB', 'AFB', 'Small Hive Beetle', 'Other'], :include_blank => true %>
+  <%= f.select :type_of_disease_pest, ['Chalkbrood', 'Nosema', 'Varroa Mites', 'Tracheal Mites', 'EFB', 'AFB', 'Small Hive Beetle', 'Other'], {}, { :class => 'disease_optional_record_field' } %>
   
   <br />
 
