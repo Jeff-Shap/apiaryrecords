@@ -12,6 +12,7 @@
   <tbody>
     <% @hive_records.each do |hive_record| %>
       <tr>
+        <td><%= hive_record.id %>
         <td><%= link_to 'Show', hive_record %></td>
         <td><%= link_to 'Edit', edit_hive_record_path(hive_record) %></td>
         <td><%= link_to 'Destroy', hive_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
