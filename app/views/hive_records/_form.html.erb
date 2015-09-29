@@ -56,14 +56,28 @@
 
   <br />
 
-  <%= f.label 'Excessive Drone Cells:' %>
+  <%= f.label 'Excessive Drone Cells' %>
   <%= f.check_box :excessive_drone_cells %>
 
   <br />
 
-  <%= f.label 'Drone Population Estimate:' %>
+  <%= f.label 'Drone Population Estimate' %>
   <%= f.number_field :drone_pop_est %>
 
+  <br />
+
+  <%= f.label 'Queen Cells' %>
+  <%= f.check_box :queen_cells %>
+
+  <br />
+
+  <%= f.label 'Along Frame Bottom:' %>
+  <%= f.number_field :queen_cells_frame_bottom %>
+
+   <br />
+
+  <%= f.label 'Converted worker cell:' %>
+  <%= f.number_field :queen_cells_converted %>
 
 
   <div class="actions">
