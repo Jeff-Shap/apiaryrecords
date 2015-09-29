@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150929185340) do
+ActiveRecord::Schema.define(version: 20150929190338) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 20150929185340) do
   end
 
   create_table "hive_records", force: :cascade do |t|
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
     t.integer  "hive_id_temp"
     t.string   "hive_temperament"
     t.string   "laying_pattern"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20150929185340) do
     t.boolean  "deep_body"
     t.boolean  "split_hive"
     t.boolean  "swarming_imminent"
+    t.boolean  "excessive_drone_cells"
   end
 
   create_table "order_profiles", force: :cascade do |t|
