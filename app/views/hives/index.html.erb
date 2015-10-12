@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Hives</h1>
+<h1 style="text-align:center">Hives</h1>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th colspan="3"></th>
@@ -20,6 +20,54 @@
   </tbody>
 </table>
 
-<br>
+<br> -->
 
-<%= link_to 'New Hive', new_hive_path %>
+
+
+<div class="container" id="hive-data-table">
+  
+  <div class="row" id="new-hive-icon-row">
+    <%= link_to 'NEW HIVE ICON', new_hive_path %>
+  </div>
+
+  <div class="row" id="hive-data-table-headers">
+    <div class="col-sm-2 col-sm-offset-3">
+      HIVE ID
+    </div>
+    <div class="col-sm-1">
+      ALERTS
+    </div>
+    <div class="col-sm-1">
+      EDIT
+    </div>
+    <div class="col-sm-1">
+      DELETE
+    </div>
+    <div class="col-sm-1">
+      RECORDS
+    </div>
+  </div>
+
+  <% @hives.each do |hive| %>
+  <div class="row hive-data-table-info">
+    <div class="col-sm-2 col-sm-offset-3">
+      <%= link_to "Hive #{hive.id}", hive_path(:id => hive.id) %>
+    </div>
+    <div class="col-sm-1">
+      ALERT
+    </div>
+    <div class="col-sm-1">
+      EDIT
+    </div>
+    <div class="col-sm-1">
+      DELETE
+    </div>
+    <div class="col-sm-1">
+      <%= HiveRecord.where("hive_id":hive.id).length %>
+    </div>
+  </div>
+  <% end %>
+
+</div>
+
+

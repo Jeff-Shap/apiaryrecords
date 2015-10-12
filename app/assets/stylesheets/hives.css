@@ -2,3 +2,28 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+#hive-data-table {
+  border: 1px solid red;
+  width: 60%;
+}
+
+#hive-data-table-headers {
+
+}
+
+#new-hive-icon-row {
+  
+
+}
+
+.hive-data-table-info {
+  height: 80px;
+  border: 1px solid green;
+  margin: 10px;
+  padding-top: 30px;
+}
+
+.hive-data-table-info:nth-child(odd) {
+  background-color: grey;
+}
