@@ -16,6 +16,11 @@
 
   <br />
 
+  <%= f.label 'Number of Active Slides:' %>
+  <%= f.number_field :num_slides_active %>
+
+  <br />
+
   <%= f.label 'Hive Temperament:' %>
   <%= f.select :hive_temperament, ['Calm', 'Nervous', 'Agressive', 'Time to requeen']%>
 
