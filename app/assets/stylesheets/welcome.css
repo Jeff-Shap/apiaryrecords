@@ -2,3 +2,23 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+.index-btn-row {
+  margin-bottom: 3em;
+}
+
+.index-btn {
+  background: yellow !important;
+  height: 100px;
+  width: 50%;
+  margin-bottom: 2em !important;
+  position: relative;
+  left: 23%;
+  padding-top: 1em !important;
+}
+
+a.index-btn {
+  font-size: 2em;
+
+}
+

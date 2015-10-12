@@ -1,6 +1,10 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+
 <br />
 <br />
-<div class="jumbotron">TEST</div>
-<p>THIS WILL BE THE AUTHENTICATED USER LANDING PAGE</p>
+
+
+  
+
+  <%= link_to "Hives", {controller: "hive_records", action: "new"}, {class: "btn btn-default index-btn"} %>
+
+  <%= link_to "New Report", {controller: "hive_records", action: "new"}, {class: "btn btn-default index-btn"} %>
