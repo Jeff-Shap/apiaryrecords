@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'welcome/home'
+
+  get 'welcome/about'
+
   get 'welcome/index'
 
   resources :hive_records
