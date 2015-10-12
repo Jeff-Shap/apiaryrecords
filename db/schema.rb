@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151012164335) do
+ActiveRecord::Schema.define(version: 20151012180159) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,11 @@ ActiveRecord::Schema.define(version: 20151012164335) do
     t.string   "equip_to_replace"
     t.boolean  "replace_foundation"
     t.integer  "num_slides_active"
+  end
+
+  create_table "hives", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
